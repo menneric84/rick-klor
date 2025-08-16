@@ -1,7 +1,6 @@
 
 #include "rickKlor.dtsi"
-/ {
-	
+
 	&kscan0 {
 		row-gpios =
 		<&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -19,4 +18,4 @@
 	&default_transform {// Offset of 3 because the left side has 3 columns
 		col-offset = <5>;
 	};
-};
+
