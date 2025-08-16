@@ -1,0 +1,6 @@
+if RICK_KLOR
+
+config ZMK_KEYBOARD_NAME
+    default "RickKlor"
+
+endif
