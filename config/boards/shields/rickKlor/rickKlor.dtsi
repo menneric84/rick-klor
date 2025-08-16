@@ -4,7 +4,7 @@
 / {
 	chosen {
 		zmk,physical-layout = &physical_layout0;
-	};
+	};:
 	kscan0: kscan0 {
 		compatible = "zmk,kscan-gpio-matrix";
 		diode-direction = "col2row";
@@ -30,7 +30,7 @@
 		compatible = "zmk,physical-layout";
 		display-name = "Split Ortho 4x10";
 		transform = <&transform>;
-		kscan = <&kscan>;
+		kscan = <&kscan0>;
 		keys//                     w   h    x    y     rot    rx    ry
 		= <&key_physical_attrs 100 100    0   95       0     0     0>
 		, <&key_physical_attrs 100 100  100   32       0     0     0>
