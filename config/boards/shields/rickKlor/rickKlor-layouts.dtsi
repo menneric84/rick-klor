@@ -20,7 +20,7 @@
 		<&pro_micro 0(GPIO_ACTIVE_HIGH)>,
 		<&pro_micro 11 (GPIO_ACTIVE_HIGH)>,
 		<&pro_micro 04 (GPIO_ACTIVE_HIGH)>,
-		<&pro_micro 06 (GPIO_ACTIVE_HIGH)>
+		<&pro_micro 06 (GPIO_ACTIVE_HIGH)>;
 	};
 
     transform: matrix_transform {
