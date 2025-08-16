@@ -17,7 +17,7 @@
 		<&pro_micro 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 		
 		col-gpios = <&pro_micro 29 (GPIO_ACTIVE_HIGH)>,
-		<&pro_micro 0(GPIO_ACTIVE_HIGH)>,
+		<&pro_micro 00 (GPIO_ACTIVE_HIGH)>,
 		<&pro_micro 11 (GPIO_ACTIVE_HIGH)>,
 		<&pro_micro 04 (GPIO_ACTIVE_HIGH)>,
 		<&pro_micro 06 (GPIO_ACTIVE_HIGH)>;
