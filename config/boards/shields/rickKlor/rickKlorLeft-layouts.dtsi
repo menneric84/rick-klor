@@ -1,6 +1,4 @@
-#include <physical_layouts.dtsi>
-#include <dt-bindings/zmk/matrix_transform.h>
-#include <rickKlor.dtsi>
+#include "rickKlor.dtsi"
 
 / {
         &kscan0 {

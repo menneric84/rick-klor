@@ -1,8 +1,6 @@
 
-#include <rickKlor.dtsi>
-
+#include "rickKlor.dtsi"
 / {
-
 	
 	&kscan0 {
 		row-gpios =
