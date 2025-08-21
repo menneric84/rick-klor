@@ -1,7 +1,1 @@
 #include "rickKlorRight-layouts.dtsi"
-&i2c1 {
-    trackball: trackball@0a {
-        compatible = "pimoroni,trackball";
-        reg = <0x0a>; // Default I2C address for Pimoroni Trackball
-    };
-};

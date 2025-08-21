@@ -1,4 +1,3 @@
-
 #include "rickKlor.dtsi"
 
 &kscan0 {
