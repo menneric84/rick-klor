@@ -3,7 +3,7 @@ if RICK_KLOR_LEFT
 config ZMK_KEYBOARD_NAME
     default "RickKlor"
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
 
 endif
@@ -12,6 +12,5 @@ if RICK_KLOR_LEFT || RICK_KLOR_RIGHT
 
 config ZMK_SPLIT
     default y
-
 
 endif
