@@ -45,7 +45,7 @@
 			&bootloader &kp ESCAPE  &lt 1 SPACE              &kp BACKSPACE    &bootloader        
 			>;
 		};
-
+ 
 		raise_layer {			
 			bindings = <
 			&trans               &trans               &trans         &trans             &trans           &trans         &trans             &trans         &as LS(EQUAL) EQUAL         &as LS(MINUS) MINUS
