@@ -1,7 +1,7 @@
 if RICK_KLOR_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "RickKlor"
+    default "Rick"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
