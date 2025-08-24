@@ -51,7 +51,7 @@
 			&trans               &trans               &trans         &trans             &trans           &trans         &trans             &trans         &as LS(EQUAL) EQUAL         &as LS(MINUS) MINUS
 			&as LS(N1) NUMBER_1  &as LS(N2) NUMBER_2  &as LS(N3) N3  &as LS(N4) N4      &as LS(N5) N5    &as LS(N6) N6  &as LS(N7) N7      &as LS(N8) N8  &as LS(N9) N9  &as LS(N0) N0
 			&trans               &trans               &trans         &as LBKT LS(LBKT)  &trans           &trans         &as RBKT LS(RBKT)  &as APOS LS(APOS)         &trans         &as LS(BSLH) BSLH
-			&bootloader            &trans           &trans                  &trans &kp PAGE_UP &kp PAGE_DOWN &kp HOME &kp END &kp DEL
+			&bootloader            &trans           &trans                  &trans &trans &kp PAGE_UP &kp PAGE_DOWN &kp HOME &kp END &kp DEL
 			>;
 		};
 		
