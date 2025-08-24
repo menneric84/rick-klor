@@ -23,6 +23,6 @@
         reg = <0x0a>;
         status = "okay";
         label = "TRACKBALL";
-        poll-period-ms = <10>;
+        poll_period_ms = <10>;
     };
 };

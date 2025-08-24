@@ -13,7 +13,7 @@ properties:
   label:
     required: false
     
-  poll-period-ms:
+  poll_period_ms:
     type: int
     default: 10
     description: Polling period in milliseconds
