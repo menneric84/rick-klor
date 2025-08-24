@@ -1,2 +1,2 @@
-# Trackball Kconfig temporarily disabled for ZMK v0.3 compatibility
-# rsource "drivers/input/pimoroni_trackball/Kconfig"
+# Trackball Kconfig for ZMK v0.3
+rsource "drivers/input/pimoroni_trackball/Kconfig"

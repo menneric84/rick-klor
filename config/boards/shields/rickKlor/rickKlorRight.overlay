@@ -2,9 +2,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/pinctrl/nrf-pinctrl.h>
 
-/*
-Trackball configuration temporarily disabled for ZMK v0.3 compatibility
-
 &pinctrl {
     i2c0_default: i2c0_default {
         group1 {
@@ -29,4 +26,3 @@ Trackball configuration temporarily disabled for ZMK v0.3 compatibility
         poll-period-ms = <10>;
     };
 };
-*/

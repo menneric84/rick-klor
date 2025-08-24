@@ -72,14 +72,11 @@ static void pimoroni_trackball_work_handler(struct k_work *work)
         LOG_DBG("Movement: x=%d, y=%d", x, y);
         
         if (x != 0) {
-            input_report_rel(data->dev, INPUT_REL_X, x, false, K_FOREVER);
+            input_report_rel(data->dev, INPUT_REL_X, x, y == 0, K_FOREVER);
         }
         if (y != 0) {
-            input_report_rel(data->dev, INPUT_REL_Y, y, false, K_FOREVER);
+            input_report_rel(data->dev, INPUT_REL_Y, y, true, K_FOREVER);
         }
-        
-        /* Send sync to indicate end of movement data */
-        input_report_rel(data->dev, INPUT_REL_X, 0, true, K_FOREVER);
     }
 }
 
