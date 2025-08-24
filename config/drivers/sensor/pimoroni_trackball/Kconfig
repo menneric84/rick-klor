@@ -1,7 +1,0 @@
-config PIMORONI_TRACKBALL
-    bool "Pimoroni Trackball sensor"
-    default y
-    depends on I2C
-    select SENSOR
-    help
-      Enable support for the Pimoroni trackball sensor.

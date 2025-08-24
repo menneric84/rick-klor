@@ -1,0 +1,19 @@
+# Copyright (c) 2023-2025 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+description: Pimoroni Trackball (PIM447) I2C input device
+compatible: "pimoroni,trackball"
+
+include: [input-device.yaml, i2c-device.yaml]
+
+properties:
+  reg:
+    required: true
+    
+  label:
+    required: false
+    
+  poll-period-ms:
+    type: int
+    default: 10
+    description: Polling period in milliseconds

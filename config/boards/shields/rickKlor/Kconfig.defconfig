@@ -1,4 +1,4 @@
-if RICK_KLOR_LEFT
+if SHIELD_RICK_KLOR_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Rick"
@@ -8,7 +8,7 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
-if RICK_KLOR_LEFT || RICK_KLOR_RIGHT
+if SHIELD_RICK_KLOR_LEFT || SHIELD_RICK_KLOR_RIGHT
 
 config ZMK_SPLIT
     default y

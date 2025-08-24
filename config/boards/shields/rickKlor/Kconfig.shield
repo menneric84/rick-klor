@@ -1,5 +1,5 @@
-config RICK_KLOR_LEFT
+config SHIELD_RICK_KLOR_LEFT
     def_bool $(shields_list_contains,rickKlorLeft)
 
-config RICK_KLOR_RIGHT
+config SHIELD_RICK_KLOR_RIGHT
     def_bool $(shields_list_contains,rickKlorRight)

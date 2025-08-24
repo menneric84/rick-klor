@@ -29,5 +29,13 @@
         reg = <0x0a>;
         status = "okay";
         label = "TRACKBALL";
+        poll-period-ms = <10>;
+    };
+};
+
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
     };
 };
