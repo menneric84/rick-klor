@@ -1,0 +1,6 @@
+# ZMK build artifacts and dependencies
+build/
+.west/
+zephyr/
+zmk/
+modules/
