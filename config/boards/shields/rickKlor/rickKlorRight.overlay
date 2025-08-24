@@ -42,11 +42,23 @@
 };
 */
 
+&{/chosen} {
+    zmk,kscan = &kscan_comp;
+};
+
 / {
-    // Additional key scan for 5-way switch
-    kscan_5way: kscan_5way {
+    kscan_comp: kscan_comp {
+        compatible = "zmk,kscan-composite";
+        label = "COMPOSITE_KSCAN";
+        kscan = <&kscan0>, <&kscan_extra>;
+    };
+};
+
+/ {
+    // Additional GPIO direct keys for 5-way switch
+    kscan_extra: kscan_extra {
         compatible = "zmk,kscan-gpio-direct";
-        label = "5WAY_SWITCH";
+        label = "EXTRA_KEYS";
         
         input-gpios
             = <&pro_micro 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    // up
@@ -55,27 +67,5 @@
             , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // right
             , <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>    // center
             ;
-    };
-
-    // Transform for the 5-way switch
-    fiveway_transform: fiveway_transform {
-        compatible = "zmk,matrix-transform";
-        rows = <1>;
-        columns = <5>;
-        
-        map = <
-        RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)
-        >;
-    };
-
-    // Composite kscan combining main matrix and 5-way switch
-    composite_kscan {
-        compatible = "zmk,kscan-composite";
-        label = "COMPOSITE_KSCAN";
-        
-        // main matrix kscan (from main configuration)
-        kscan-0 = <&kscan0>;
-        // 5-way switch kscan
-        kscan-1 = <&kscan_5way>;
     };
 };
