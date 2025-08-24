@@ -1,1 +1,2 @@
-rsource "drivers/input/pimoroni_trackball/Kconfig"
+# Temporarily disable trackball Kconfig to test build
+# rsource "drivers/input/pimoroni_trackball/Kconfig"
