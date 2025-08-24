@@ -78,7 +78,7 @@ static void pimoroni_trackball_work_handler(struct k_work *work)
             input_report_rel(data->dev, INPUT_REL_Y, y, false, K_FOREVER);
         }
         
-        /* Send sync event to indicate end of movement data */
+        /* Send sync to indicate end of movement data */
         input_report_rel(data->dev, INPUT_REL_X, 0, true, K_FOREVER);
     }
 }

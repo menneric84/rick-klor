@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/pinctrl/nrf-pinctrl.h>
 
-/*
 &pinctrl {
     i2c0_default: i2c0_default {
         group1 {
@@ -27,4 +26,3 @@
         poll-period-ms = <10>;
     };
 };
-*/
