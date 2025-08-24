@@ -5,7 +5,7 @@
 
 config ZMK_TRACKBALL_PIM447
     bool "Enable Pimoroni PIM447 trackball sensor"
-    default y if SHIELD_RICKKLORRIGHT
+    default y if RICK_KLOR_RIGHT
     select I2C
     select SENSOR
     help
