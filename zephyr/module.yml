@@ -1,6 +1,0 @@
-build:
-  settings:
-    board_root: config
-    dts_root: config
-    kconfig_root: config
-  cmake-ext: true
