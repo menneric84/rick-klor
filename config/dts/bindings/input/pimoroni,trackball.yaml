@@ -4,7 +4,7 @@
 description: Pimoroni Trackball (PIM447) I2C input device
 compatible: "pimoroni,trackball"
 
-include: [input-device.yaml, i2c-device.yaml]
+include: [i2c-device.yaml]
 
 properties:
   reg:
@@ -17,3 +17,6 @@ properties:
     type: int
     default: 10
     description: Polling period in milliseconds
+    
+  status:
+    required: false
