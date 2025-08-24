@@ -1,7 +1,0 @@
-config PIMORONI_TRACKBALL
-    bool "Pimoroni Trackball input device"
-    default y
-    depends on I2C
-    select INPUT
-    help
-      Enable support for the Pimoroni trackball input device.
