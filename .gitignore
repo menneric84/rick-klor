@@ -1,0 +1,9 @@
+# Build artifacts
+build/
+.west/
+modules/
+zmk/
+zephyr/
+
+# OS
+.DS_Store
