@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/pinctrl/nrf-pinctrl.h>
 
-/*
 / {
     chosen {
         zmk,pointer = &trackball;
@@ -40,4 +39,3 @@
         device = <&trackball>;
     };
 };
-*/

@@ -1,2 +1,1 @@
-# Driver temporarily disabled  
-#rsource "drivers/input/pimoroni_trackball/Kconfig"
+rsource "drivers/input/pimoroni_trackball/Kconfig"
