@@ -25,9 +25,16 @@
     pinctrl-names = "default";
     
     trackball: trackball@0a {
-        compatible = "pimoroni,trackball";
+        compatible = "pimoroni,trackball_pim447";
         reg = <0x0a>;
-        label = "TRACKBALL";
         status = "okay";
+        
+        sensitivity = <64>;
+        move-factor = <2>;
+        scroll-factor = <1>;
+        
+        led-red = <0>;
+        led-green = <255>;
+        led-blue = <0>;
     };
 };

@@ -37,14 +37,23 @@ The selected pins (P0.02, P0.03) for I2C communication:
    - Enabled pointing device: `CONFIG_ZMK_POINTING_DEVICE=y`
 
 3. **config/dts/bindings/sensor/pimoroni,trackball.yaml**
-   - Device tree binding for Pimoroni Trackball
-   - Defines compatible interface and properties
+   - Enhanced device tree binding for Pimoroni PIM447 Trackball
+   - Defines compatible interface and properties including LED control and sensitivity
+
+4. **config/drivers/sensor/trackball_pim447/**
+   - Complete driver implementation for PIM447 trackball
+   - Proper I2C communication and sensor framework integration
+
+5. **config/Kconfig and config/CMakeLists.txt**
+   - Build configuration to include the custom driver
 
 ## Features
 
-- Mouse movement via trackball
+- Mouse movement via trackball using proper PIM447 driver
 - Configurable X/Y axis inversion
-- Adjustable resolution (default: 400 CPI)
+- Adjustable sensitivity (1-255, default: 64)
+- Movement and scroll factor scaling
+- RGB LED color control
 - Integration with ZMK pointing device system
 
 ## Usage

@@ -1,0 +1,18 @@
+# Copyright (c) 2023-2025 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+# Note: The main ZMK_TRACKBALL_PIM447 config is defined in the root Kconfig
+# This file should only contain options *dependent* on the main config.
+
+if ZMK_TRACKBALL_PIM447
+
+config ZMK_TRACKBALL_PIM447_DEBUG
+    bool "Debug logs for Pimoroni PIM447 trackball"
+    default n
+    depends on ZMK_LOGGING # Add dependency on logging subsystem
+    help
+      Enable debug logging for the Pimoroni trackball driver.
+
+# Behavior config moved to its own Kconfig file
+
+endif # ZMK_TRACKBALL_PIM447
