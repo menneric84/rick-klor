@@ -6,8 +6,8 @@ This firmware includes support for the Pimoroni Trackball on the right half of t
 
 The trackball should be connected to the following pins on the right half:
 
-- **SDA (Data)**: Pin P0.09 (Pro Micro pin 2)  
-- **SCL (Clock)**: Pin P0.10 (Pro Micro pin 3)
+- **SDA (Data)**: Pin P0.17  
+- **SCL (Clock)**: Pin P0.20
 - **VCC**: 3.3V
 - **GND**: Ground
 
@@ -19,9 +19,11 @@ The trackball should be connected to the following pins on the right half:
 - **Interface**: I2C0
 
 ### Pin Assignments
-The selected pins (P0.09, P0.10) do not conflict with the keyboard matrix:
+The selected pins (P0.17, P0.20) for I2C communication:
 - Keyboard matrix uses pins: 4, 5, 6, 7, 8 (columns) and 15, 18, 19, 20 (rows)
-- Trackball uses pins: 9 (SDA), 10 (SCL)
+- Trackball uses pins: 17 (SDA), 20 (SCL)
+
+**Note**: Pin P0.20 is shared with one of the keyboard matrix rows. Ensure this doesn't conflict with your specific hardware implementation.
 
 ## Files Modified
 
